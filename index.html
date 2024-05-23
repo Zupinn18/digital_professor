@@ -112,28 +112,28 @@
                     
 
                     <form id="appointmentScheduler" action="https://api.web3forms.com/submit" method="POST" style="display: none;" >
-                        <input type="hidden" name="access_key" value="1c3286e4-86b2-4693-b862-c2d608f8c4b0">
+                        <input type="hidden" name="access_key" value="1c3286e4-86b2-4693-b862-c2d608f8c4b0" >
                         <!-- Calendar and Time Selector Components -->
                         <div class="form-group">
                             <label for="appointmentDate">Select Date:</label>
-                            <input type="date" class="form-control" id="appointmentDate" name="appointmentDate">
+                            <input type="date" class="form-control" id="appointmentDate" name="appointmentDate" required >
                         </div>
                         <div class="form-group">
                             <label for="appointmentTime">Select Time:</label>
-                            <input type="time" class="form-control" id="appointmentTime" name="appointmentTime">
+                            <input type="time" class="form-control" id="appointmentTime" name="appointmentTime" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="fullName">Full Name:</label>
-                            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name">
+                            <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">phone:</label>
-                            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your email">
+                            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your phone number">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your phone number" required>
                         </div>
                         <!-- Submit button -->
                         <button type="submit" id="submitAppointment" class="btn btn-primary"> <strong>Book</strong></button>
@@ -151,19 +151,19 @@
                     <h2 style="color: black; text-align: center;">Register Now</h2>
                     <div class="form-group">
                         <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required >
                     </div>
                     <div class="form-group">
                         <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
                     </div>
                     <div class="form-group">
                         <label for="mobileNumber">Mobile Number</label>
-                        <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" placeholder="Enter your mobile number">
+                        <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" placeholder="Enter your mobile number" required>
                     </div>
                     <div class="form-group">
                         <label for="state">State</label>
-                        <select class="form-control" id="state" name="state">
+                        <select class="form-control" id="state" name="state" required >
                             <!-- Options for states -->
                             <option value="">State</option>
                             <option value="">Andhra Pradesh</option>
@@ -208,7 +208,7 @@
                     </div>
                     <div class="form-group">
                         <label for="city">City</label>
-                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city">
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter your city" required>
                     </div>
                     <button type="submit" class="btn btn-primary"> <a href="https://rzp.io/i/Hj9Dft0LC0" style="color: #ffffff;">Submit</a> </button>
                 </form>
@@ -612,7 +612,6 @@
     //         console.error("Error:", error);
     //     });
     // });
-
 
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
