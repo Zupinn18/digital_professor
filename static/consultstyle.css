@@ -525,7 +525,7 @@ body{
     width: 110%;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 5px !important;
     font-size: 22px;
     margin-top: 40px;
 }
@@ -534,7 +534,7 @@ body{
     .container-faq{ 
         width: 100%;
         margin: auto;
-        min-height: 100vh;
+        min-height: 10vh;
         display: grid;
         place-items: center;
     }
