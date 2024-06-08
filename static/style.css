@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .carousel-item {
     display: flex;
     justify-content: center;
@@ -394,3 +395,471 @@ section .section-title {
 .section-grey{
 background : #eff1f4;
 }
+=======
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    display: flex;
+    width: 20%; /* Adjust this value if you want more or fewer images per slide */
+    height: auto;
+    object-fit: cover;
+}
+.card {
+  --bg-card: #27272a;
+  --primary: #d9287b;
+  --primary-800: #4c1d95;
+  --primary-shadow: #2e1065;
+  --light: #d9d9d9;
+  --zinc-800: #18181b;
+  --bg-linear: linear-gradient(0deg, var(--primary) 50%, var(--light) 125%);
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  padding: 1rem;
+  width: 14rem;
+  background-color: var(--bg-card);
+
+  border-radius: 1rem;
+}
+
+.image_container {
+  overflow: hidden;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 5;
+
+  width: 100%;
+  height: 8rem;
+  background-color: var(--primary-800);
+
+  border-radius: 0.5rem;
+}
+
+.image_container .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 3rem;
+  fill: var(--light);
+}
+
+.title {
+  overflow: clip;
+
+  width: 100%;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: black;
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.size {
+  font-size: 0.75rem;
+  color: black;
+}
+
+.list-size {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  margin-top: 0.25rem;
+}
+
+.list-size .item-list {
+  list-style: none;
+}
+
+.list-size .item-list-button {
+  cursor: pointer;
+
+  padding: 0.5rem;
+  background-color: var(--zinc-800);
+
+  font-size: 0.75rem;
+  color: var(--light);
+
+  border: 2px solid var(--zinc-800);
+  border-radius: 0.25rem;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.item-list-button:hover {
+  border: 2px solid var(black);
+}
+.item-list-button:focus {
+  background-color: var(--primary);
+
+  border: 2px solid var(--primary-shadow);
+
+  box-shadow: inset 0px 1px 4px var(--primary-shadow);
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.cart-button {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+
+  padding: 0.5rem;
+  width: 100%;
+  background-image: var(--bg-linear);
+
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--light);
+  text-wrap: nowrap;
+
+  border: 2px solid hsla(323, 100%, 22%, 0.5);
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 0.25rem 1px var(--light);
+}
+
+.cart-button .cart-icon {
+  width: 1rem;
+}
+
+
+button{
+    background-color: #75003a;
+    color: white;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body{
+  background-color: #000;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.container-faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-faq h2 {
+    margin-bottom: 20px;
+}
+
+.faqs {
+    width: 100%;
+}
+
+details {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Styles for the appointment form popup */
+#appointmentScheduler {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e2e2e2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+/* Styles for form inputs */
+#appointmentScheduler input[type="date"],
+#appointmentScheduler input[type="time"],
+#appointmentScheduler input[type="text"],
+#appointmentScheduler input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Styles for form labels */
+#appointmentScheduler label {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Styles for the submit button */
+#appointmentScheduler #submitAppointment {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styles for the submit button on hover */
+#appointmentScheduler #submitAppointment:hover {
+  background-color: #0056b3;
+  width: 200px !important;
+}
+
+
+.container-faq h2{
+  color: #000000;
+  text-align: center;
+}
+
+details{
+  background-color: #ffffff;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  color: #75003a;
+  display: flex !important;
+  justify-content: space-between;  
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] div{
+  padding: .5em 1em;
+}
+
+
+.awards{
+   background-color: #75003a; 
+   color: #ffffff;
+   font-weight: 300;
+   display: flex !important;
+   flex-direction: column !important;
+}
+
+.awards ul{
+    font-size: larger !important;
+    text-align: center !important;
+}
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #75003a;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #75003a !important;
+}
+#footer h5{
+  padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+  padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+  font-size:25px;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+  font-size:30px;
+  margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+  color:#ffffff;
+}
+#footer ul.social li a:hover{
+  color:#eeeeee;
+}
+#footer ul.quick-links li{
+  padding: 3px 0;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+  padding: 3px 0;
+  margin-left:5px;
+  font-weight:700;
+}
+#footer ul.quick-links li a i{
+  margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+.number-main{
+  margin-top: 20px;
+  display: flex; 
+  justify-content: space-between;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  position: relative;
+  width: 100%;    
+  padding: 30px 30px 30px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #747474;
+  box-sizing: border-box;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.section-grey{
+background : #eff1f4;
+}
+
+.why-us-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 10px;
+}
+
+.choose-main{
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonial-image{
+  height: 200px; 
+  width: 200px; 
+  margin-bottom: 20px;
+}
+
+.footer-main{
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width:767px){
+  #footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+.WebsiteStatusHtml{
+  width: 100%;
+}
+.form{
+  width: 100%;
+}
+.number-main{
+  margin-top: 350px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.why-us-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap: 10px;
+}
+.card{
+  width: 100%;
+}
+.choose-main{
+  display: flex; 
+  flex-direction: column;
+  margin-top: 20px;
+}
+.testimonial-image{
+  height: 100px; 
+  width: 100px; 
+  margin-bottom: 20px;
+}
+.footer-main{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+}
+>>>>>>> 9238ec256e80b26276b63d111dbe959b35060f35
