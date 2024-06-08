@@ -610,6 +610,10 @@ body{
     }
     
     @media screen and (max-width: 780px) {
+        .wrapper{
+            justify-content: center;
+            margin-bottom: 100px !important;
+        }
         .container {
             width: 50%;
         }
@@ -641,6 +645,52 @@ body{
         .about-left-main{
             justify-content: center;
         }
+        .about-right-main{
+            width: 100%;
+        }
+        .mission-images .first-four-mission{
+            display: flex;
+            flex-direction: column;
+        }
+        .sixth-container h1{
+            text-align: center;
+            font-size: 1rem !important;
+        }
+        .sixth-container .gurantee-info{
+            display: flex;
+            flex-direction: column;
+        }
+        .sixth-container .gurantee-info img{
+            width: 100px;
+        }
+ 
+        .sixth-container .gurantee-info .detail-info p{
+            text-align: center;
+            font-size: 1rem !important;
+        }
+        .faq-main{
+            justify-content: center;
+        }
+        .container-faq .accordion__wrapper{
+         width: 100%;
+         justify-content: center;
+         display: grid;
+         margin-left: -100px;
+        }
+        .btn{
+            width: 50%;
+            font-size: 1rem;
+            margin-top: -50px;
+        }
+        .fixed-content  p{
+           font-size: 1rem !important;
+        }
+
+         .fixed-content .btn {
+            height: 50px !important;
+            margin-left: -200px;
+            font-size: 1rem !important;
+          }
     }
     
     
