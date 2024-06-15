@@ -705,6 +705,10 @@ body{
             height: auto !important;
             width: auto ;
           }
+       .about-coach-main .info-cards{
+        display: flex;
+        flex-direction: column;
+       }
     }
     
     
