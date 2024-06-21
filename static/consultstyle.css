@@ -169,7 +169,7 @@ body{
 }
 
 .about-right-main{
-    width: 50%;
+    width: 100%;
 }
 
 .about-right{
@@ -615,6 +615,388 @@ body{
         }
     }
     
+    @media screen and (max-width: 780px) {
+        .hero-section img{
+            width: 80px;
+        }
+        .hero-component{
+            width: 95%;
+            padding: 35px 25px;
+        }
+        
+        .hero-text{
+            padding: 6px 10px;
+            font-size: 12px;
+        }
+        
+        .hero-desc{
+            font-size: 20px;
+        }
+
+        .hero-desc span{
+            font-size: 22px;
+        }
+        
+        .hero-about{
+            width: 100%;
+            flex-direction: column;
+        }
+        .about-left{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .about-left-main img{
+            height: 150px;
+        }
+        
+        .about-content{
+            font-size: 15px;
+        }
+        
+        .line{
+            width: 50%;
+        }
+        .rajiv-name{
+            font-size: 22px !important;
+        }
+        
+        .about-right-main{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .about-left-star{
+            width: 90%;
+            gap: 70px !important;
+            padding: 6px 12px;
+            font-size: 14px !important;
+        }
+
+        .left-start{
+            width: 10px;
+            height: 10px;
+        }
+        
+        .about-right{
+            font-size: 12px;
+            font-weight: 400;
+        }
+        
+        .about-right-head{
+            font-size: 18px;
+        }
+
+        .right-container img{
+            width: 15px;
+            height: 15px;
+        }
+
+        .about-register-text{
+            font-size: 16px !important;
+        }
+        .btn{
+            font-size: 16px;
+        }
+
+        .timer{
+            width: 100%;
+        }
+        
+        .feature h1{
+            font-size: 22px !important;
+        }
+
+        .feature img{
+            width: 200px;
+        }
+        
+        
+        .why-us-main{
+            width: 90%;
+        }
+        
+        .first-why h1, .second-why h1{
+            font-size: 22px;
+        }
+
+        .first-why img{
+            width: 200px;
+        }
+
+
+        .why-component{
+            flex-direction: column;
+        }
+
+        .why-component img{
+            width: 100px;
+        }
+        
+        .why-cards{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .why-card{
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        
+        /* fourth section */
+        
+        .courses-container{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        .courses-container h1{
+            font-size: 22px;
+        }
+        
+        .course-img{
+            width: 50%;
+            margin: 0 auto;
+            grid-template-columns: repeat(1,1fr);
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .course-img img{
+            width: 150px;
+        }
+
+        .course-card{
+            font-size: 14px;
+        }
+
+        .card-price{
+            font-size: 18px !important;
+        }
+
+        .card-today-price{
+            font-size: 20px !important;
+        }
+        
+        .timer {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .time-box span {
+            font-size: 28px;
+        }
+        
+        .label {
+            font-size: 12px;
+        }
+
+        .course-video p{
+            font-size: 16px !important;
+        }
+        
+        .video-cards{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        
+        
+        
+        /* fifth */
+        
+        .fifth-section{
+            background-color: #fffbf3;
+        }
+        
+        .about-coach-main{
+            width: 100%;
+        }
+        
+        .coach-card{
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .coach-img{
+            width: 80px;
+            height: 80px;
+        }
+
+        .coach-img img{
+            width: 60px !important;
+            height: 60px !important;
+        }
+        
+        .coach-info p{
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .coach-info{
+            align-self: center;
+        }
+
+        .info-head{
+            font-size: 18px !important;
+        }
+        
+        .info-cards{
+            width: 90%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 10px;
+        }
+        
+        .info-card{
+            font-size: 14px;
+        }
+        
+        .info-card-num{
+            font-size: 18px;
+        }
+
+        .mission-head{
+            font-size: 22px !important;
+
+        }
+        
+        .mission-images{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .first-four-mission{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+        .first-four-mission img{
+            border-radius: 20px;
+            width: 280px;
+        }
+
+        .mission-botm{
+            font-size: 20px !important;
+
+        }
+        
+        .sixth-container h1{
+            font-size: 22px !important;
+        }
+
+        .gurantee-info{
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .gurantee-info img{
+            width: 100px !important;
+        }
+        
+        .detail-info p{
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            text-align: justify;
+        }
+        
+        
+        .letter-main{
+            width: 100%;
+            font-size: 18px;
+        }
+
+
+        .faq-main{
+            width: 100%;
+            font-size: 18px !important;
+            margin: 0 auto;
+        }
+            
+            
+            .container-faq{ 
+                width: 100%;
+                margin: auto;
+                min-height: 100vh;
+                display: grid;
+                place-items: center;
+            }
+            
+            .accordion__wrapper {
+                width: 110%;
+            }
+            
+            .accordion__title{
+                font-size: 16px;
+                color: var(--color-white);
+            }
+            
+            .accordion__icon {
+                background-color: var(--color-primary);
+                width: 1rem;
+                height: 1rem;
+            }
+            
+            .accordion__question{
+                font-size: 16px;
+            }
+            
+            .accordion__answer{
+                font-size: 12px;
+            }
+            
+            .accordion__content{
+                overflow: hidden;
+                height: 0;
+                transition: var(--transition);
+            }
+
+
+            /* fixed */
+            .fixed-main{
+                width: 95%;
+            }
+            
+            .fixed-content{
+                width: 100%;
+                margin: 0 auto;
+                gap: 10px;
+                flex-direction: column;
+            }
+            
+            .fixed-info p{
+                font-size: 14px !important;
+            }
+            
+            .fixed-amount{
+                font-size: 12px !important;
+            }
+
+            .fixedbtn{
+                width: 100% !important;
+                font-size: 12px;
+            }
+        
+    }
+
     
     
     

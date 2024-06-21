@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="static/style.css">
     <script src="static/main.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
     <style>
         .full-height {
             height: 700px;
@@ -21,21 +22,35 @@
         .consult-text:hover{
             color: gray;
         }
+
+        @media screen and (max-width:768px) {
+            .nav-main {
+                display: flex;
+                flex-direction: column;
+            }
+            .book-btn{
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <!-- navbar -->
     <div class="container-nav">
-        <nav class="navbar navbar-expand-lg navbar-light" style="z-index: 20;">
+        <nav class="navbar navbar-expand-lg navbar-light " style="z-index: 20;">
             <span class="navbar-brand" style="position: absolute; padding: 0px !important; flex-wrap: wrap;">
-                <img loading="lazy" role="img" alt="logo2.png" src="assets/logo.jpeg" width="100"
-                    class="lsq-component-image" style="width: 100px !important;">
+                <img loading="lazy" role="img" alt="logo2.png" src="assets/logo.png" width="100"
+                    class="lsq-component-image" style="width: 150px !important;">
             </span>
             <div class="navbar-collapse collapse" style="position: relative; justify-content: right; display: flex;">
                 <div class="navbar-nav right-images" style=" position: relative; margin-bottom: 5px;">
-                    <div style="display: flex; justify-content: center; align-items: center;" >
-                        <a href="consultation.html" class="consult-text" style="margin-top: 40px;color: black; font-size: 20px; font-weight: 500;" >Consultation</a>
+                    <div class="nav-main" style="display: flex; justify-content: center; align-items: center;margin-top: 20px; gap: 20px;" >
+                        <a href="paperwriting.html" class="consult-text" style="color: black; font-size: 20px; font-weight: 500;" >Paper Writing </a>
+                        <a href="consultation.html" class="consult-text" style="color: black; font-size: 20px; font-weight: 500;" >Consultation</a>
+                        <a href="https://appt.link/meet-with-digital-professor-sQmEZzbl/2-hour-scopus-writing-workshop" >
+                            <button style="width: 100%;" class="book-btn" >Book Appointment</button>
+                        </a>
                     </div>
                     <!-- <img loading="lazy" role="img" alt="leadnaac.png"
                         src="https://f2.leadsquaredcdn.com/t/sce/content/common/images/leadnaac.png" width="188"
@@ -452,7 +467,7 @@
     </div>
 
     <!-- placement -->
-    <div class="container container-form" style="margin-top: 20px;">
+    <!-- <div class="container container-form" style="margin-top: 20px;">
         <h2 style="text-align: center; margin: 40px;">What Our Students Say?</h2>
         <div class="row full-height"
             style="background-color: #ffffff; background-size: cover; background-position: center;  color: black;">
@@ -479,7 +494,66 @@
             </div>
             
         </div>
-    </div>
+    </div> -->
+
+    
+    <section class="testimonial text-center">
+        <div class="container">
+
+            <div class="heading white-heading">
+                Student Testimonial
+            </div>
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="assets/avatar-3.svg" class="img-circle img-responsive" />
+                            <p>The team at digital professors is a very learned and scholastic team. I have got immense help from them in my research work. They are best at formulating questionnaires, developing research models, Data analysis and Publication of scopus...</p>
+                            <h4>Priyanka Chowdhary</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="assets/avatar-2.svg" class="img-circle img-responsive" /><p>A session on how to use Mendeley Desktop and Mendeley reference manager was conducted by Mr. Manish Mishra. The session was very practicle andi was requested to download and use the software with his direct support. I could learn basics of ...</p>
+                            <h4>JAMAL NASIR KOHISTANI</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="assets/avatar-1.svg" class="img-circle img-responsive" />
+                            <p>I took a session with digital professors for data analysis and now I am clear about my analysis and outcomes, never had this much clarity thank you digital professors you have been a great help.</p>
+                            <h4>Pranjali Sahay</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="assets/avatar-2.svg" class="img-circle img-responsive" />
+                            <p>I am really lucky that I came across to know about this platform. Thanku Digital Professor for helping me out at every stage of my research..... from objective formulation to its analysis. Keep going...</p>
+                            <h4>Annu Pandey</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="assets/avatar-1.svg" class="img-circle img-responsive" />
+                            <p>Trustworthy
+                                <br/>
+                                Very helpful for my PhD journey
+                                <br/>
+                                Informative</p>
+                            <h4>Shellnandni kaushal</h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
 
     <div class="container-faq center-content m-3 " style="background-color: rgb(204, 204, 204);">
         <h2>FAQs</h2>
@@ -526,28 +600,36 @@
         <div class="">
           <h5>Contact US</h5>
           <ul class="list-unstyled quick-links">
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Email:</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>info@digitalprofessors.org</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Email:</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>hidigitalprofessors@gmail.com</a></li>
             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Phone:</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>+91 987XXX987</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>+91 7302185392</a></li>
             <!-- <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li> -->
           </ul>
         </div>
-        <!-- <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class="">
           <h5>Quick links</h5>
           <ul class="list-unstyled quick-links">
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+            <li><a href="https://appt.link/meet-with-digital-professor-sQmEZzbl/2-hour-scopus-writing-workshop"><i class="fa fa-angle-double-right"></i>Book Appointment</a></li>
+            <li><a href="https://rzp.io/l/tV2tYQgJx"><i class="fa fa-angle-double-right"></i>Programme Fees</a></li>
           </ul>
-        </div> -->
+        </div>
         <div class="" >
           <h5>Address</h5>
             <p style="color: #ffffff;">
                 Jogiwala, Dehradun <br/> 248005
             </p>
+            <div style="display: flex; gap: 5px; align-items: center;" >
+                <a href="https://www.instagram.com/digitalprofessors" >
+                    <img src="assets/instagram_zuppi-removebg-preview.png" style="width: 30px;" />
+                </a>
+                <a href="https://wa.me/+917302185392" >
+                    <img src="assets/whatsapp.png" style="width: 45px;" />
+                </a>
+                <a href="www.digitalprofessors.in" >
+                    <img src="assets/sitelo-removebg-preview.png" style="width: 45px;" />
+                </a>
+            </div>
             <!-- <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
             <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
@@ -556,21 +638,9 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-          <ul class="list-unstyled list-inline social text-center">
-            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
-            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
-            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
-          </ul>
-        </div>
-        </hr>
-      </div>  
-      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
           
-          <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Digital PRofessor</a></p>
+          <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="#" target="_blank">Digital PRofessor</a></p>
         </div>
         </hr>
       </div>  
