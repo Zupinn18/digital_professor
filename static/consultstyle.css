@@ -542,8 +542,7 @@ body{
     
     .accordion__wrapper {
         border-radius: 2.5rem;
-        width: 200%;
-        max-width: 60rem;
+        width: 150%;
         padding: 5rem;
     }
     
@@ -585,7 +584,7 @@ body{
     }
     
     .accordion__question{
-        font-size: var(--fs-md);
+        font-size: 20px;
         font-weight: var(--fw-medium);
         color: white;
     }
@@ -596,6 +595,7 @@ body{
         border-radius: 15px;
         color: black;
         font-weight: 500;
+        font-size: 18px;
     }
     
     .accordion__content{
@@ -619,6 +619,12 @@ body{
             width: 100%;
             margin: auto;
             justify-content: center;
+        }
+        .accordion__question{
+            font-size: 16px;
+        }
+        .accordion__answer{
+            font-size: 14px;
         }
         .hero-section{
             display: flex;
@@ -678,7 +684,6 @@ body{
          width: 100%;
          justify-content: center;
          display: grid;
-         margin-left: -100px;
         }
         .btn{
             width: 50%;
@@ -709,6 +714,13 @@ body{
        .about-coach-main .info-cards{
         display: flex;
         flex-direction: column;
+       }
+       .container-faq{
+        width: 100%;
+       }
+       .gurantee-main-content{
+        width: 90%;
+        margin: 0 auto;
        }
     }
     
